@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Changed font-family to Poppins for a modern look */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Light teal gradient */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #00bfa5, #00695c); /* Teal gradient */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto for a sleek look */
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    font-style: italic; /* Added italic style */
+}
+
+/* Main Section */
+main {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #00695c; /* Dark teal */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00695c;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif; /* Added Roboto font */
+    font-weight: bold;
+}
+
+/* About Me Section */
+.section p {
+    font-family: 'Montserrat', sans-serif; /* Changed to Montserrat for modern, attractive look */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.section p strong {
+    color: #00695c; /* Highlight strong text in dark teal */
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-family: 'Open Sans', sans-serif; /* Changed to Open Sans for a clean look */
+}
+
+ul li::before {
+    content: "✓";
+    color: #00695c; /* Dark teal */
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+}
+
+.skills-list li {
+    background: #e0f2f1; /* Light teal background */
+    color: #00695c;
+    border: 1px solid #00695c;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Changed to Poppins */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: linear-gradient(135deg, #00695c, #00bfa5); /* Teal gradient */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif; /* Added Roboto font */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
